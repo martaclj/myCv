@@ -10,9 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="dist/output.css">
+  <!-- npx tailwindcss -i ./style.css -o ./dist/output.css --watch -->
 </head>
 <body>
-  <div "mt-5 borer mx-5 p-10">
+  <!-- <div class="container px-5 py-24 mx-auto"> -->
+  <div class="mt-5 borer mx-5 p-10">
   <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
     <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="marta.jpg" alt="resume picture">
   <div class="text-center space-y-2 sm:text-left">
@@ -24,10 +26,9 @@
   </div>
   </div>
   <section class="section-item">
-    <p class=""> Soy profesora de español nativa de Madrid, España. Tengo un Máster en Enseñanza de Español como Lengua Extranjera. Hablo inglés, italiano y continúo mejorando mi alemán.  Soy licenciada en Derecho y ADE y acabo de terminar mi grado en Lenguas Modernas y sus Literatura en alemán e italiano.</p>
+    <p class="">Profesora de español. Máster en Enseñanza de Español como Lengua Extranjera. Inglés, italiano y alemán. Derecho y ADE, Lenguas Modernas y sus Literaturas.</p>
    </section>
-  <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
-
+  <div>
    <section class="col-start-2 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
     <h3 class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Educación</h3>
     <span class="material-symbols-outlined">
@@ -57,6 +58,19 @@
       </div>
     </ul>
   </section>
+  <section class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+    <h3 class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Habilidades</h3>
+  <span class="material-symbols-outlined">
+    star
+    </span>
+    <ul>
+    <li>Canva</li>
+    <li>Word</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    </ul>
+  </section>
   <section class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xlm">
     <h3 class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Idiomas</h3>
     <span class="material-symbols-outlined">
@@ -73,19 +87,7 @@
     </div>
   </div>
   </section>
-  <section class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-    <h3 class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Habilidades</h3>
-  <span class="material-symbols-outlined">
-    star
-    </span>
-    <ul>
-    <li>Canva</li>
-    <li>Word</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    </ul>
-  </section>
+  </div>
   </div>
   </div>
   <script src="script.js"></script>

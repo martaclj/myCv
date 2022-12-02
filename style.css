@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --white: #FFFFFF;
   --black: #000000;
@@ -30,17 +34,18 @@ img {
   font-weight: var(--lg);
   margin: 10px 0 0 5px;
 }
-.title {
+/* .title {
   margin: 10px 0 0 5px;
   color: var(--white);
   background-color: var(--very--light-pink);
-}
+} */
 .description {
   margin: 10px;
   padding: 10px;
 }
 section {
-  border: 2px solid var(--hospital-green);
+  margin: 20px;
+  padding: 10px;
   margin: 5px;
 }
 h3 {
@@ -61,8 +66,15 @@ ul {
   margin: 0;
   padding: 0;
 }
-a {
+/* a {
   color: var(--very--light-pink);
   font-size: var(--lg);
   text-decoration: none;
+} */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }

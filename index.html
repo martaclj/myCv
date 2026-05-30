@@ -13,84 +13,146 @@
   <link rel="stylesheet" href="output.css">
   <!-- npx tailwindcss -i ./style.css -o ./output.css --watch -->
 </head>
-<body>
-  <!-- <div class="container px-5 py-24 mx-auto"> -->
-  <div class="mt-5 borer mx-5 p-10">
-  <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-    <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="marta.jpg" alt="resume picture">
-  <div class="text-center space-y-2 sm:text-left">
-  <h1 class="text-lg text-black font-semibold">Marta Larrad</h1>
-  <h2 class="text-slate-500 font-medium">Spanish Teacher</h2>
-  <ul>
-    <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 hover:bg-sky-700 ..."><a href="https://youtube.com/@thespanishteacher4u/" target="_blank">The Spanish Teacher 4u</a></button>
-  </ul>
-  </div>
-  </div>
-  <section class="section-item">
-    <p class="">Spanish Teacher. Master's in Teaching Spanish as a Foreign Language. </p>
-   <p>English, Italian and German. Law and BA, Modern Languages and Literatures.</p>
-   </section>
-  <div>
-   <section class="col-start-2 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-    <h3 class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Education</h3>
-    <span class="material-symbols-outlined">
-      school
-      </span>
-      <div class="md:shrink-0">
-    <ul>
-    <li>2012 Degree in Law and Business Administration</li>
-    <li>2013 Master's in Legal Practice</li>
-    <li>2021 Master's in Teaching Spanish as a Foreign Language</li>
-    <li>2022 Degree in Modern Languages and Literatures</li>
-    </ul>
-    </div>
-  </section>
-  <section class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-    <ul>
-    <h3 class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Experience</h3>
-    <span class="material-symbols-outlined">
-      work
-      </span>
-      <div class="md:shrink-0">
-    <li>2021 - 2022 Teaching Assistant and Digital Marketing at The Spanish Line</li>
-    <li>2022 Assistant and Document Review at Perloti</li>
-    <li>2022 - Present: Spanish Tutor at Y
-    </li>
+<body class="bg-bg-base text-gray-800 antialiased min-h-screen py-10 font-sans">
+  <div class="max-w-6xl mx-auto px-5">
+    
+    <!-- header cv -->
+     <header class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-10 mb-8 flex flex-col sm:flex-row items-center sm:items-start gap-8 text-center sm:text-left transition-shadow hover:shadow-md">
+      <img src="marta.jpg" alt="Marta Larrad Profile Picture" class="h-32 w-32 object-cover rounded-full border-4 border-secondary shadow-sm">
+
+      <div class="flex-1 space-y-3 mt-2">
+        <h1 class="text-3xl font-bold text-gray-900 tracking-tight">Marta Larrad</h1>
+        <h2 class="text-lg font-medium text-primary uppercase tracking-wider">Web developer</h2>
+        <p class="text-gray-600 max-w-lg leading-relaxed">
+          Master's in Teaching Spanish as a Foreign Language. Background in Law, Business Administration, and Modern Languages & Literatures.
+        </p>
+        <div class="pt-2">
+          <a href="https://speakweb.martaclj.com" target="_blank" rel="noopener noreferrer" class="inline-block px-5 py-2 text-sm font-semibold text-purple-600 bg-purple-50 rounded-full border border-purple-200 transition-colors hover:text-white hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">
+            Speakweb - Language exchange
+          </a>
+        </div>
       </div>
-    </ul>
-  </section>
-  <section class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-    <h3 class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Skills</h3>
-  <span class="material-symbols-outlined">
-    star
-    </span>
-    <ul>
-    <li>Canva</li>
-    <li>Word</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    </ul>
-  </section>
-  <section class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xlm">
-    <h3 class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Languages</h3>
-    <span class="material-symbols-outlined">
-      language
-      </span>
-      <div class="md:shrink-0">
-    <div class="md:shrink-0">
-    <ul>
-    <li>Native Spanish</li>
-    <li>English B2</li>
-    <li>Italian B2</li>
-    <li>German B1</li>
-    </ul>
-    </div>
+     </header>
+
+     <!-- main -->
+      <main class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- left column -->
+         <div class="space-y-6">
+
+          <!-- skills -->
+           <section class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-6">
+            <div class="flex items-center gap-2 mb-4 text-primary">
+              <span class="material-symbols-outlined">terminal</span>
+              <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800">Tech stack</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 bg-bg-base text-gray-700 border border-gray-200 rounded-md text-xs font-mono font-medium">HTML</span>
+              <span class="px-3 py-1.5 bg-bg-base text-gray-700 border border-gray-200 rounded-md text-xs font-mono font-medium">CSS</span>
+              <span class="px-3 py-1.5 bg-bg-base text-gray-700 border border-gray-200 rounded-md text-xs font-mono font-medium">JavaScript</span>
+              <span class="px-3 py-1.5 bg-bg-base text-gray-700 border border-gray-200 rounded-md text-xs font-mono font-medium">Java</span>
+              <span class="px-3 py-1.5 bg-bg-base text-gray-700 border border-gray-200 rounded-md text-xs font-mono font-medium">Tailwind CSS</span>
+            </div>
+           </section>
+
+           <!-- main project -->
+            <section class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-6">
+              <div class="flex items-center gap-2 mb-4 text-primary">
+                <span class="material-symbols-outlined">code_blocks</span>
+                <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800">Featured project</h3>
+              </div>
+              <a href="https://speakweb.martaclj.com" target="_blank" rel="noopener noreferrer" class="block p-4 rounded-xl bg-bg-base border border-secondary/50 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+                <h4 class="font-bold text-gray-900 mb-1">Speakweb</h4>
+                <p class="text-sm text-gray-600 mb-3">Language exchange platform to connect students and organize events.</p>
+              </a>
+            </section>
+
+          <!-- experience -->
+           <section class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-6">
+            <div class="flex items-center gap-2 mb-4 text-primary">
+              <span class="material-symbols-outlined">work</span>
+              <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800">Experience</h3>
+            </div>
+            <ul class="space-y-4 text-gray-600">
+              <li class="flex flex-col">
+                <span class="font-semibold text-gray-800">IT Assistant</span>
+                <span class="text-sm">Y (2024 - 2025)</span>
+              </li>
+              <li class="flex flex-col">
+                <span class="font-semibold text-gray-800">Spanish language tutor</span>
+                <span class="text-sm">Y (2022 - 2023)</span>
+              </li>
+              <li class="flex flex-col">
+                <span class="font-semibold text-gray-800">Teaching Assistant & Digital Marketing</span>
+                <span class="text-sm">The Spanish Line (2021 - 2022)</span>
+              </li>
+            </ul>
+           </section>
+
+         </div>
+
+
+        <!-- right column -->
+         <div class="space-y-6">
+          
+          <!-- education -->
+              <section class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-6">
+                <div class="flex items-center gap-2 mb-4 text-primary">
+                <span class="material-symbols-outlined">school</span>
+                <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800">Education</h3>
+                </div>
+                  <ul class="space-y-4 text-gray-600">
+                      <li class="flex flex-col">
+                        <span class="font-semibold text-gray-800">
+                          Web Application Development (DAW)
+                        </span>
+                        <span class="text-sm">2026</span>
+                      </li>
+                      <li class="flex flex-col">
+                        <span class="font-semibold text-gray-800">
+                          Degree in Modern Languages & Literature
+                        </span>
+                        <span class="text-sm">2022</span>
+                      </li>
+                      <li class="flex flex-col">
+                        <span class="font-semibold text-gray-800">
+                          Master's in Teaching Spanish (ELE)
+                        </span>
+                        <span class="text-sm">2021</span>
+                      </li>
+                      <li class="flex flex-col">
+                        <span class="font-semibold text-gray-800">
+                          Master's in Legal Practice
+                        </span>
+                        <span class="text-sm">CEIJ (2013)</span>
+                      </li>
+                      <li class="flex flex-col">
+                        <span class="font-semibold text-gray-800">
+                          Degree in Law & Business Administration
+                        </span>
+                        <span class="text-sm">2012</span>
+                      </li>
+                  </ul>
+              </section>
+
+              <!-- languages -->
+               <section class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-6">
+                 <div class="flex items-center gap-2 mb-4 text-primary">
+                   <span class="material-symbols-outlined">language</span>
+                   <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800">Languages</h3>
+                 </div>
+                   <ul class="space-y-2 text-gray-600">
+                       <li><div class="flex justify-between border-b border-bg-base pb-1"><span>Spanish</span><span class="font-medium text-primary">Native</span></div></li>
+                       <li><div class="flex justify-between border-b border-bg-base pb-1"><span>English</span><span class="font-medium">C1</span></div></li>
+                       <li><div class="flex justify-between border-b border-bg-base pb-1"><span>Italian</span><span class="font-medium">C1</span></div></li>
+                       <li><div class="flex justify-between border-b border-bg-base pb-1"><span>German</span><span class="font-medium">B2</span></div></li>
+                   </ul>
+               </section>
+
+        </div>
+      </main>
   </div>
-  </section>
-  </div>
-  </div>
-  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

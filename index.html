@@ -16,15 +16,24 @@
 <body class="bg-bg-base text-gray-800 antialiased min-h-screen py-10 font-sans">
   <div class="max-w-6xl mx-auto px-5">
 
+    <!-- language toggle -->
+    <div class="flex justify-end mb-4">
+      <button id="lang-toggle" class="px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-gray-500 border border-gray-300 rounded-full hover:text-primary hover:border-primary transition-colors">ES</button>
+    </div>
+
     <!-- header cv -->
     <header class="bg-white rounded-[2rem] shadow-sm border border-secondary/30 p-10 md:p-16 mb-10 flex flex-col md:flex-row items-center md:items-start gap-10 text-center md:text-left">
       <img src="marta.jpg" alt="Marta Larrad Profile Picture" class="h-40 w-40 object-cover rounded-xl shadow-sm">
 
       <div class="flex-1 space-y-4 mt-2 max-w-3xl">
         <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 tracking-tight">Marta Larrad</h1>
-        <h2 class="text-xl font-bold text-primary uppercase tracking-wider">Web developer</h2>
-        <p class="text-gray-600 text-lg leading-relaxed">
-          Full-stack developer (Java - Angular) with a multilingual background in Law, Business Administration, and Modern Languages. Preparing for the Spanish Civil Service IT examination (TAI).
+        <h2 class="text-xl font-bold text-primary uppercase tracking-wider"
+            data-en="Web developer"
+            data-es="Desarrolladora web">Web developer</h2>
+        <p class="text-gray-600 text-lg leading-relaxed"
+           data-en="Full-stack developer (Java - Angular) with a multidisciplinary background in Law, Business Administration, and Modern Languages. Preparing for the Spanish Civil Service IT examination (TAI)."
+           data-es="Desarrolladora full-stack (Java - Angular) con formación multidisciplinar en Derecho, Administración de Empresas y Lenguas Modernas. Preparando las oposiciones TAI (Técnico en Informática de la Administración).">
+          Full-stack developer (Java - Angular) with a multidisciplinary background in Law, Business Administration, and Modern Languages. Preparing for the Spanish Civil Service IT examination (TAI).
         </p>
         <div class="pt-4 flex flex-wrap gap-3 justify-center md:justify-start">
           <a href="https://linkedin.com/in/mlarrad" target="_blank" rel="noopener noreferrer" class="inline-block px-6 py-2.5 text-sm font-semibold text-blue-600 bg-blue-50 rounded-full border border-blue-200 transition-colors hover:text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">
@@ -47,7 +56,9 @@
         <section id="stack" class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-8">
           <div class="flex items-center gap-2 mb-6 text-primary">
             <span class="material-symbols-outlined">terminal</span>
-            <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800">Tech stack</h3>
+            <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800"
+                data-en="Tech stack"
+                data-es="Tecnologías">Tech stack</h3>
           </div>
           <div class="flex flex-wrap gap-2.5">
             <span class="px-3 py-1.5 bg-bg-base text-gray-700 border border-gray-200 rounded-md text-xs font-mono font-medium">Java</span>
@@ -70,11 +81,15 @@
         <section id="project" class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-6">
           <div class="flex items-center gap-2 mb-4 text-primary">
             <span class="material-symbols-outlined">code_blocks</span>
-            <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800">Featured project</h3>
+            <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800"
+                data-en="Featured project"
+                data-es="Proyecto destacado">Featured project</h3>
           </div>
           <a href="https://speakweb.martaclj.com" target="_blank" rel="noopener noreferrer" class="block p-4 rounded-xl bg-bg-base border border-secondary/50 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
             <h4 class="font-bold text-gray-900 mb-1">Speakweb</h4>
-            <p class="text-sm text-gray-600 mb-3">Language exchange platform to connect students and organize events.</p>
+            <p class="text-sm text-gray-600 mb-3"
+               data-en="Language exchange platform to connect students and organize events."
+               data-es="Plataforma de intercambio de idiomas para conectar estudiantes y organizar eventos.">Language exchange platform to connect students and organize events.</p>
             <div class="flex flex-wrap gap-1.5 pt-1">
               <span class="text-[10px] font-mono bg-white text-gray-500 px-2 py-0.5 rounded border border-gray-200">Java</span>
               <span class="text-[10px] font-mono bg-white text-gray-500 px-2 py-0.5 rounded border border-gray-200">Spring Boot</span>
@@ -88,19 +103,27 @@
         <section id="experience" class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-6">
           <div class="flex items-center gap-2 mb-4 text-primary">
             <span class="material-symbols-outlined">work</span>
-            <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800">Experience</h3>
+            <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800"
+                data-en="Experience"
+                data-es="Experiencia">Experience</h3>
           </div>
           <ul class="space-y-4 text-gray-600">
             <li class="flex flex-col">
-              <span class="font-semibold text-gray-800">IT Assistant</span>
+              <span class="font-semibold text-gray-800"
+                    data-en="IT Assistant"
+                    data-es="Técnico Auxiliar de Informática">IT Assistant</span>
               <span class="text-sm">Igeo (2024 - 2025)</span>
             </li>
             <li class="flex flex-col">
-              <span class="font-semibold text-gray-800">Spanish language tutor</span>
+              <span class="font-semibold text-gray-800"
+                    data-en="Spanish language tutor"
+                    data-es="Tutora de español">Spanish language tutor</span>
               <span class="text-sm">LINGQ (2022 - 2023)</span>
             </li>
             <li class="flex flex-col">
-              <span class="font-semibold text-gray-800">Teaching Assistant & Digital Marketing</span>
+              <span class="font-semibold text-gray-800"
+                    data-en="Teaching Assistant & Digital Marketing"
+                    data-es="Auxiliar docente y Marketing Digital">Teaching Assistant & Digital Marketing</span>
               <span class="text-sm">The Spanish Line (2021 - 2022)</span>
             </li>
           </ul>
@@ -115,27 +138,39 @@
         <section id="education" class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-6">
           <div class="flex items-center gap-2 mb-4 text-primary">
             <span class="material-symbols-outlined">school</span>
-            <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800">Education</h3>
+            <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800"
+                data-en="Education"
+                data-es="Formación">Education</h3>
           </div>
           <ul class="space-y-4 text-gray-600">
             <li class="flex flex-col">
-              <span class="font-semibold text-gray-800">Web Application Development (DAW)</span>
+              <span class="font-semibold text-gray-800"
+                    data-en="Web Application Development (DAW)"
+                    data-es="Desarrollo de Aplicaciones Web (DAW)">Web Application Development (DAW)</span>
               <span class="text-sm">2026</span>
             </li>
             <li class="flex flex-col">
-              <span class="font-semibold text-gray-800">Degree in Modern Languages & Literature</span>
+              <span class="font-semibold text-gray-800"
+                    data-en="Degree in Modern Languages & Literature"
+                    data-es="Grado en Lenguas Modernas y sus Literaturas">Degree in Modern Languages & Literature</span>
               <span class="text-sm">2022</span>
             </li>
             <li class="flex flex-col">
-              <span class="font-semibold text-gray-800">Master's in Teaching Spanish (ELE)</span>
+              <span class="font-semibold text-gray-800"
+                    data-en="Master's in Teaching Spanish (ELE)"
+                    data-es="Máster en Enseñanza del Español (ELE)">Master's in Teaching Spanish (ELE)</span>
               <span class="text-sm">2021</span>
             </li>
             <li class="flex flex-col">
-              <span class="font-semibold text-gray-800">Master's in Legal Practice</span>
+              <span class="font-semibold text-gray-800"
+                    data-en="Master's in Legal Practice"
+                    data-es="Máster en Práctica Jurídica">Master's in Legal Practice</span>
               <span class="text-sm">CEIJ (2013)</span>
             </li>
             <li class="flex flex-col">
-              <span class="font-semibold text-gray-800">Degree in Law & Business Administration</span>
+              <span class="font-semibold text-gray-800"
+                    data-en="Degree in Law & Business Administration"
+                    data-es="Licenciatura conjunta en Derecho y Administración y Dirección de Empresas">Degree in Law & Business Administration</span>
               <span class="text-sm">2012</span>
             </li>
           </ul>
@@ -145,13 +180,27 @@
         <section class="bg-white rounded-2xl shadow-sm border border-secondary/30 p-6">
           <div class="flex items-center gap-2 mb-4 text-primary">
             <span class="material-symbols-outlined">language</span>
-            <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800">Languages</h3>
+            <h3 class="uppercase tracking-wider text-sm font-bold text-gray-800"
+                data-en="Languages"
+                data-es="Idiomas">Languages</h3>
           </div>
           <ul class="space-y-2 text-gray-600">
-            <li><div class="flex justify-between border-b border-bg-base pb-1"><span>Spanish</span><span class="font-medium text-primary">Native</span></div></li>
-            <li><div class="flex justify-between border-b border-bg-base pb-1"><span>English</span><span class="font-medium">C1</span></div></li>
-            <li><div class="flex justify-between border-b border-bg-base pb-1"><span>Italian</span><span class="font-medium">C1</span></div></li>
-            <li><div class="flex justify-between border-b border-bg-base pb-1"><span>German</span><span class="font-medium">B2</span></div></li>
+            <li><div class="flex justify-between border-b border-bg-base pb-1">
+              <span data-en="Spanish" data-es="Español">Spanish</span>
+              <span class="font-medium text-primary" data-en="Native" data-es="Nativo">Native</span>
+            </div></li>
+            <li><div class="flex justify-between border-b border-bg-base pb-1">
+              <span data-en="English" data-es="Inglés">English</span>
+              <span class="font-medium">C1</span>
+            </div></li>
+            <li><div class="flex justify-between border-b border-bg-base pb-1">
+              <span data-en="Italian" data-es="Italiano">Italian</span>
+              <span class="font-medium">C1</span>
+            </div></li>
+            <li><div class="flex justify-between border-b border-bg-base pb-1">
+              <span data-en="German" data-es="Alemán">German</span>
+              <span class="font-medium">B2</span>
+            </div></li>
           </ul>
         </section>
 
